@@ -1,0 +1,293 @@
+@font-face { font-family: atami; src: url('atami-oblique.otf'); } 
+
+@font-face {
+    font-family: 'quantifybold';
+    src: url('quantify_bold-webfont.woff2') format('woff2'),
+         url('quantify_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.page {
+    float: left;
+  width: 100vw;
+  height: 100vh;
+    text-align: center;
+    align-content: center;
+
+}
+
+.docScroller {
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+}
+
+.LandingInside{
+    width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+}
+
+div.inside {
+  width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 60em;
+    display: table;
+  margin-right: auto;
+  margin-left: auto;
+    
+        
+}
+
+.one{
+    background: url(http://i.imgur.com/tPyi2PG.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+}
+
+.two{
+    background: url(http://i.imgur.com/Nkqedit.jpg); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+}
+
+.three{
+
+    background-image: url(http://i.imgur.com/TubGWwi.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+    
+}
+
+.four{
+    background: url(http://i.imgur.com/EE2yII8.png) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    -webkit-animation-name: moveUp;
+	-moz-animation-name: moveUp;
+	-o-animation-name: moveUp;
+	animation-name: moveUp;
+
+    
+}
+
+.five{
+    background: url(http://i.imgur.com/UiaRPAb.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+}
+
+h2{
+    text-align: center;
+    font-family: atami;
+    font-style: italic;
+    font-size: 1vh;
+    text-shadow: 0.04em 0.04em #EA485F;
+    color: #191B34;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-family: atami;
+    color: #EA485F;
+    font-style: italic;
+    text-shadow: 0.5vh 0.5vw #28353B;
+    font-size: 10vw;
+    display: inline-block;
+    margin-top: 20vh;
+}
+
+
+ul{
+
+    text-align: right
+}
+
+img{
+    height: 9vh;
+    width: auto;
+    display: inline-block;
+    float: left;
+    padding: 0.5vh;
+}
+
+h3{
+    text-align: center;
+    font-family: Atami;
+    color: #191B34;
+    font-style: italic;
+    text-shadow: 0.04em 0.04em #EA485F;
+    font-size: 5vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+
+.TEXT{
+    text-align: center;
+    font-style: bold;
+    font-family: Futura;
+    text-shadow: 0.5vh #EA485F;
+    font-size: 3vh;
+}
+
+.Role{
+    color: #EA485F;
+}
+
+hr { 
+    visibility: hidden;
+}
+
+button {
+     background-color: #EA485F; /* Green */
+    color: #28353B;
+    border: none;
+    font-family: futura;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: #28353B; /* Green */
+    border: none;
+    color: #EA485F;
+    font-family: futura;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ForgetButton{
+    margin-top: 40px;
+}
+
+iFrame {
+    padding: 3vh 3vw;
+    width: 70vw !important;
+    max-width: 600px;
+    height: 40vh !important;
+}
+
+
+
+#header {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3em;
+		line-height: 3em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    height: 10vh;
+	}
+a{
+            font-family: futura, sans-serif;
+            font-style: bold;
+            font-size: 2.5vh;
+            margin: 1vh;
+}
+
+		#header h1 {
+			position: absolute;
+			left: 1em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+			cursor: default;
+		}
+
+			#header h1 a {
+				font-size: 1.25em;
+			}
+
+		#header nav {
+			position: absolute;
+			right: 0.5em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+            
+		}
+
+			#header nav ul {
+				margin: 0;
+                
+			}
+
+				#header nav ul li {
+					display: inline-block;
+					margin-left: 0.5em;
+					font-size: 0.9em;
+				}
+
+					#header nav ul li a {
+						display: block;
+						color: inherit;
+						text-decoration: none;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 0.5em 0 0.5em;
+						outline: 0;
+                        
+					}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+
+				#header h1 {
+					text-align: center;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 2.5em;
+					line-height: 2.5em;
+				}
+
+					#header h1 a {
+						font-size: 1em;
+					}
+
+				#header nav {
+					display: none;
+				}
+
+		}
