@@ -9,16 +9,16 @@
 
 }
 
+body{
+    margin: 0;
+}
+
 .page {
     float: left;
   width: 100vw;
   height: 100vh;
     text-align: center;
     align-content: center;
-}
-
-body{
-	margin: 0;
 }
 
 .docScroller {
@@ -57,7 +57,7 @@ div.inside {
 }
 
 .one{
-    background: url(http://i.imgur.com/tPyi2PG.jpg); 
+    background: url(IMAGES/BG%20AE.png); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -66,7 +66,7 @@ div.inside {
 }
 
 .two{
-    background: url(http://i.imgur.com/Nkqedit.jpg); 
+    background: url(IMAGES/img-8792_orig.jpg); 
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ div.inside {
 
 .three{
 
-    background-image: url(http://i.imgur.com/TubGWwi.png);
+    background-image: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.34.15.png);
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -86,7 +86,7 @@ div.inside {
 }
 
 .four{
-    background: url(http://i.imgur.com/EE2yII8.png) ; 
+    background: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.33.37.png) ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -100,7 +100,7 @@ div.inside {
 }
 
 .five{
-    background: url(http://i.imgur.com/UiaRPAb.jpg) ; 
+    background: url(IMAGES/img-8725_orig.jpg) ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
