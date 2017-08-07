@@ -17,6 +17,10 @@
     align-content: center;
 }
 
+body{
+	margin: 0;
+}
+
 .docScroller {
   overflow-x: hidden;
   top: 0;
