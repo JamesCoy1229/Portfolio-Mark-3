@@ -9,15 +9,12 @@
 
 }
 
-
-
 .page {
     float: left;
   width: 100vw;
   height: 100vh;
     text-align: center;
     align-content: center;
-
 }
 
 .docScroller {
@@ -26,9 +23,13 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  scroll-snap-points-y: repeat(100%);
-  scroll-snap-type: mandatory;
-  scroll-snap-destination: 100% 0%;
+  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
+    -ms-scroll-snap-type: mandatory;
+    -webkit-snap-points-y: repeat(100vh);
+    -webkit-scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: mandatory;
+    scroll-snap-stop: always;
 }
 
 .LandingInside{
@@ -52,7 +53,7 @@ div.inside {
 }
 
 .one{
-    background: url(http://i.imgur.com/tPyi2PG.jpg); 
+    background: url(IMAGES/BG%20AE.png); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -61,7 +62,7 @@ div.inside {
 }
 
 .two{
-    background: url(http://i.imgur.com/Nkqedit.jpg); 
+    background: url(IMAGES/img-8792_orig.jpg); 
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -71,7 +72,7 @@ div.inside {
 
 .three{
 
-    background-image: url(http://i.imgur.com/TubGWwi.png);
+    background-image: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.34.15.png);
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -81,7 +82,7 @@ div.inside {
 }
 
 .four{
-    background: url(http://i.imgur.com/EE2yII8.png) ; 
+    background: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.33.37.png) ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -95,7 +96,7 @@ div.inside {
 }
 
 .five{
-    background: url(http://i.imgur.com/UiaRPAb.jpg) ; 
+    background: url(IMAGES/img-8725_orig.jpg) ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -115,31 +116,27 @@ h2{
 h1 {
     text-align: center;
     font-family: atami;
-    color: #EA485F;
     font-style: italic;
+    color: #EA485F;
     text-shadow: 0.5vh 0.5vw #28353B;
     font-size: 10vw;
     display: inline-block;
-    margin-top: 20vh;
+    margin-top:5vh;
 }
 
-
-ul{
-
-    text-align: right
+header{
+    height: 15vh;
+ 
 }
-
 img{
-    height: 4em;
+    height: inherit;
     width: auto;
-    display: inline-block;
     float: left;
-    margin-left: 1em;
 }
 
 h3{
     text-align: center;
-    font-family: Atami;
+    font-family: futura;
     color: #191B34;
     font-style: italic;
     text-shadow: 0.04em 0.04em #EA485F;
@@ -203,6 +200,9 @@ iFrame {
 
 
 
+
+
+
 #header {
 		position: fixed;
 		z-index: 10000;
@@ -216,7 +216,7 @@ iFrame {
 a{
             font-family: futura, sans-serif;
             font-style: bold;
-            font-size: 2.5vh;
+            font-size: 2.5vw;
 }
 
 		#header h1 {
@@ -227,10 +227,6 @@ a{
 			line-height: 3em;
 			cursor: default;
 		}
-
-			#header h1 a {
-				font-size: 1.25em;
-			}
 
 		#header nav {
 			position: absolute;
@@ -278,13 +274,13 @@ li :hover{
 
 
 
-.nav li ul {
+.Navigation li ul {
     position:absolute;
     left:0;
     top:36px;
     z-index:1;
 }
-.nav li ul li {
+.Navigation li ul li {
     overflow:hidden;
     height:0;
     -webkit-transition:height 200ms ease-in;
@@ -292,7 +288,7 @@ li :hover{
     -o-transition:height 200ms ease-in;
     transition:height 200ms ease-in;
 }
-.nav ul > li:hover ul li {
+.Navigation ul > li:hover ul li {
     height:36px;
 }
 
@@ -309,21 +305,4 @@ li :hover{
             img{
                 float: none
             }
-            
-
-	body {
-		padding-top: 3em;
-	}
-
-		@media screen and (max-width: 736px) {
-
-			body {
-				padding-top: 2.5em;
-			}
-
-		}
-
-
-/* Contact */
-
-	
+}
