@@ -5,3 +5,7 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'ANIMATION/data.json'
 })
+
+AOS.init({
+  duration: 1200,
+})
