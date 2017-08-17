@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'ANIMATION/data.json'
+  path: 'data.json'
 })
 
 AOS.init({
